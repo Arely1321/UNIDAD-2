@@ -1,0 +1,64 @@
+<script>
+    var x = prompt("Cantidad de productos");
+    var i = AgregarProductos(x);
+    var j = prompt("¿cuántos productos desea comprar?")
+    var u = Carrito(j);
+    var v = prompt("¿Si desea realizar la compra?")
+
+
+   
+    
+    function AgregarProductos(x) {
+        var resultado = []
+        for (i = 0; i < x; i++) {
+            var Nombre = prompt("¿Cual es el nombre del producto?");
+            var precio = parseInt(prompt("Ingrese el precio del producto"));
+            var inventario = parseInt(prompt("Ingrese la cantidad de inventario"));
+            var Productos = {
+                'Nombre': Nombre,
+                'Precio': precio,
+                'Inventario': inventario
+            }
+            resultado.push(Productos);
+            console.log(Productos);
+        }
+        return resultado;
+    }
+    function Carrito (j){
+        var resultado = []
+        for (u = 0; u < j; u++){
+            var a = prompt("¿Que productos desea comprar?");       
+        } 
+        for(precio =0; precio < j; precio++){
+            var total = 0;
+            total = precio +1;
+
+        }
+        console.log("Los productos son "+ a+ " "+ "y la cantidad de productos es: " + j+ " " + "Total "+ total);        
+    }
+    
+    
+    function venta (v){
+        if (v == "Si"){
+            var d = prompt("¿Desea realizar otra compra?");
+            if (d == "SI") {
+                AgregarProductos();
+                Carrito();
+                mostar();
+            } else {
+                alert("Gracias por su compra");
+            }
+
+        } else {
+           alert("Gracias por su visita"); 
+        }
+    }
+    
+
+
+
+
+
+
+
+</script>
