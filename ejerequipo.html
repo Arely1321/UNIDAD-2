@@ -1,0 +1,38 @@
+<script>
+var preg = prompt("multiplicacion 1 o resta 2");
+var u = preg;
+var a = numerov();
+var e = 15;
+console.log("numero alteratorio: " +a);
+console.log("numero multiplicador: " +e);
+
+var total = a * e;
+console.log(total); 
+
+var o =  nuevNum();
+var w = 15;
+console.log("numero alteratorio: " +o);
+console.log("numero divisor: " +w);
+
+var total1 = o / w;
+console.log(total1);
+
+switch (u) {
+    case 1:
+        function numerov(){
+            var num = Math.floor(Math.random()*15);
+            return num;
+        }
+        break;
+    case 2:
+        function nuevNum(){
+          var numerow = Math.floor(Math.random()*15);
+          return numerow;
+        }
+        break;
+    default:
+        console.log("no existe ese numero");
+        break;
+}
+
+</script>
