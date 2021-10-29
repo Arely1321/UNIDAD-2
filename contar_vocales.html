@@ -1,0 +1,31 @@
+<script>
+    var palabra = prompt("Ingresa una palabra");
+    var a = vocales(palabra);
+    console.log("Las vocales son: " + palabra + " " + "total: " + a);
+
+    
+    function vocales(palabra){
+        var resultado = 0;
+        for (var i=0; i<palabra.length; i){
+        }
+        if (palabra.charAt(i).toLowerCase()==='a'){
+            resultado++
+        }
+        
+        if (palabra.charAt(i).toLowerCase()==='e'){
+            resultado++
+        }
+        if (palabra.charAt(i).toLowerCase()==='i'){
+            resultado++
+        }
+        if (palabra.charAt(i).toLowerCase()==='o'){
+            resultado++
+        }
+        if (palabra.charAt(i).toLowerCase()==='u'){
+            resultado++
+        }
+    }
+    return resultado;
+
+
+</script>
